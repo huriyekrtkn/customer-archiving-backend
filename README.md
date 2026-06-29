@@ -23,34 +23,33 @@
 
 Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 
-* Ön Gereksinimler
+### Ön Gereksinimler
 Uygulamayı derlemek ve çalıştırmak için sisteminizde şunların yüklü olması gerekir:
   - **Java 17 veya daha üstü** (JDK 17+)
   - **Maven** (Projenin bağımlılıklarını yönetmek için)
   - **Veritabanı:** Proje Spring Data JPA kullandığı için yerel bir veritabanı (PostgreSQL veya MySQL önerilir) veya test için H2 kullanabilirsiniz.
 
-* Adım Adım Çalıştırma
-
-### 1. Projeyi Klonlayın:
+### Adım Adım Çalıştırma
+  #### 1. Projeyi Klonlayın:
   ```bash
   git clone https://github.com/huriyekrtkn/customer-archiving-backend.git](https://github.com/huriyekrtkn/customer-archiving-backend.git
   ```
-### 2. Proje dizinine gidin:
+  #### 2. Proje dizinine gidin:
   ```bash
   cd customer-archiving-frontend
   ```
-### 3. Veritabanı Ayarlarını Yapılandırın:
-  src/main/resources/application.properties (veya application.yml) dosyasını açarak veritabanı bağlantı bilgilerinizi kendi yerel veritabanınıza göre güncelleyin.
-### 4. Bağımlılıkları Yükleyin ve Derleyin:
+  #### 3. Veritabanı Ayarlarını Yapılandırın:
+  `src/main/resources/application.properties` dosyasını açarak veritabanı bağlantı bilgilerinizi kendi yerel veritabanınıza göre güncelleyin.
+  #### 4. Bağımlılıkları Yükleyin ve Derleyin:
   Proje dizininde terminali açın ve şu komutu çalıştırın:
   ```bash
   mvn clean install
   ```
-### 5. Uygulamayı Başlatın:
+  #### 5. Uygulamayı Başlatın:
   ```bash
   mvn spring-boot:run
   ```
-### 6. API Testi:
+  #### 6. API Testi:
   Uygulama ayağa kalktıktan sonra tarayıcınızdan şu adrese giderek Swagger dokümantasyonuna ulaşabilir ve API uç noktalarını test edebilirsiniz:
   http://localhost:8080/swagger-ui.html
 
