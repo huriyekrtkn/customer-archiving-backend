@@ -1,0 +1,15 @@
+# IDE ve Sistem Dosyaları
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+
+# Build klasörleri
+target/
+
+# Loglar ve geçici dosyalar
+*.log
+.mvn/
+mvnw
+mvnw.cmd
